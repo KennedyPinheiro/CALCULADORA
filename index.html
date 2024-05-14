@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="Calculadora.css">
+    <title>Projeto Calculadora</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Projeto Calculadora</h1>
-    <input type="number" name="valor1" id="valor1">
-    <input type="number" name="valor2" id="valor2">
-    <br>
-    <input type="button" value="Somar" onclick="somar()">
-    <input type="button" value="Subtrair" onclick="subtrair()">
-    <br>
-    <input type="button" value="Multiplicar" onclick="multiplicar()">
-    <input type="button" value="Dividir" onclick="dividir()">
-
-    <div id="res"></div>
-    <script src="calculadora.js"></script>
+    <div class="calculator">
+        <h1>Projeto Calculadora</h1>
+        <input type="number" id="num1" placeholder="Número 1">
+        <input type="number" id="num2" placeholder="Número 2">
+        <br>
+        <button id="addButton">Somar (+)</button>
+        <button id="subtractButton">Subtrair (-)</button>
+        <button id="multiplyButton">Multiplicar (*)</button>
+        <button id="divideButton">Dividir (/)</button>
+        <br>
+        <p>Resultado: <span id="result"></span></p>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+
